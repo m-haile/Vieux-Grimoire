@@ -1,4 +1,4 @@
-const express = require('express');
+const express  = require('express');
 const mongoose = require('mongoose');
 
 const bookRoutes = require('./routes/book');
@@ -6,7 +6,7 @@ const userRoutes = require('./routes/user');
 
 mongoose.connect('mongodb+srv://mahlet16:Mahlet%2316@cluster0.4ssaee6.mongodb.net/?appName=Cluster0',
   { })
-  .then(() => console.log('MongoDB connecté !'))
+  .then(()  => console.log('MongoDB connecté !'))
   .catch(() => console.log('MongoDB échouée !'));
 
 const app = express();
